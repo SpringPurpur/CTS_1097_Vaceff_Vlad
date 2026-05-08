@@ -1,0 +1,15 @@
+package flyweight;
+
+public class PacientFlyweight implements Flyweight {
+    private Pacient pacient;
+
+    public PacientFlyweight(Pacient pacient) {
+        this.pacient = pacient;
+    }
+
+    @Override
+    public void afisareDetaliiInternare(Salon salon) {
+        System.out.println(this.pacient);
+        System.out.println(salon);
+    }
+}
